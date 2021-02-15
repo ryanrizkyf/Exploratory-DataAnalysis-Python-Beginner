@@ -12,3 +12,10 @@
 # by = Kolom di DataFrame untuk di group by. (valuenya berupa nama column di dataframe tersebut).
 # alpha = Menentukan opacity dari plot di histogram. (value berupa range 0.0 - 1.0, dimana semakin kecil akan semakin kecil opacity nya)
 # figsize = digunakan untuk menentukan ukuran dari plot histogram. Contoh: figsize=(10,12)
+
+import pandas as pd
+order_df = pd.read_csv(
+    "order.csv")
+# plot histogram kolom: price
+# order_df[[price]].plot.hist(figsize=(4, 5), bins=10,
+#                            xlabelsize = 8, ylabelsize = 8)
